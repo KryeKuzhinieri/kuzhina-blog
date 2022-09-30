@@ -1,6 +1,10 @@
 TODO:
   1. Make slug autocompleted, (DONE)
-  2. Add markdown editor.
+  2. Add markdown editor, (DONE)
+    Code not showing colors.
   3. Add languages,
-  4. Dark mode,
-  4. Deploy model.
+  4. Check footer information and fix it.
+  5. Check tailcss before production. It needs to be installed I guess.
+  6. Add logo,
+  7. Dark mode,
+  8. Deploy model.
