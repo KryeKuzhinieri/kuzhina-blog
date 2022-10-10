@@ -5,9 +5,10 @@ TODO:
   3. Add languages,
   4. Check footer information and fix it.
   5. Check tailcss before production. It needs to be installed I guess.
+  6. Dockerization,
+  6. Github actions automation,
+  7. Django tests,
+  8. Rreth nesh,
   6. Add logo,
   7. Dark mode,
   8. Deploy model.
-  
-
-  test line
