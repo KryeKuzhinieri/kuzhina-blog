@@ -5,6 +5,10 @@ TODO:
   3. Add languages,
   4. Check footer information and fix it.
   5. Check tailcss before production. It needs to be installed I guess.
+  - Add favicon,
+  - Move css to a separate file.
+  - Give html page title
+
   6. Dockerization,
   6. Github actions automation,
   7. Django tests,
