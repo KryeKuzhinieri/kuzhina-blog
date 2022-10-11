@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
+from kuzhinablog.settings import LANGUAGES
 
 
 User = get_user_model()
@@ -20,6 +21,7 @@ class Category(models.Model):
     subtitle = models.CharField(_('subtitle'), max_length=20)
     slug = models.SlugField(_('slug'), unique=True)
     thumbnail = models.ImageField(_('thumbnail'))
+    language = models.CharField(_('Language'), choices=LANGUAGES, max_length=20, default=LANGUAGES[1])
 
     def __str__(self):
         return self.title
@@ -31,7 +33,7 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(_('title'), max_length=100)
-    slug = models.SlugField(_('slug'), unique=True)
+    slug = models.SlugField(_('slug'), unique=True, max_length=100)
     overview = models.TextField(_('overview'))
     timestamp = models.DateTimeField(_('timestamp'), auto_now_add=True)
     content = models.TextField(_('content'))

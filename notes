@@ -8,6 +8,10 @@ TODO:
   - Add favicon,
   - Move css to a separate file.
   - Give html page title
+  - Filter articles language
+  - Show correct language models in admin page dashboard.
+  - Admin filter by language
+  - Search posts by language
 
   6. Dockerization,
   6. Github actions automation,

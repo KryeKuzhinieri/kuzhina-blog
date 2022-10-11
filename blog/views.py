@@ -4,12 +4,10 @@ from django.db.models import Q
 
 
 def homepage(request):
-    categories = Category.objects.all()[0:3]
-    featured = Post.objects.filter(featured=True)
-    latest = Post.objects.order_by('-timestamp')[0:3]
+    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
+    featured = Post.objects.filter(featured=True, categories__in=categories)
     context = {
         'object_list': featured,
-        'latest': latest,
         'categories': categories,
     }
     return render(request, 'homepage.html', context)
@@ -28,7 +26,7 @@ def about(request):
 
 
 def category_post_list(request, slug):
-    category = Category.objects.get(slug=slug)
+    category = Category.objects.get(slug=slug, language=request.LANGUAGE_CODE)
     posts = Post.objects.filter(categories__in=[category])
     context = {
         'posts': posts,
