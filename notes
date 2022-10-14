@@ -20,6 +20,7 @@ TODO:
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - Rreth nesh,
   - Dark mode,
+  - toggle menu when collapsed
 
 
   5. Check tailcss before production. It needs to be installed I guess.
