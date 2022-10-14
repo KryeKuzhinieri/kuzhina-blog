@@ -1,34 +1,7 @@
 {% extends 'base.html' %}
 {% load i18n %}
-
 {% block content %}
 
-<style>
-  .cursor::after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #fff;
-  animation: cursor .6s linear infinite alternate;
-  will-change: opacity;
-}
-
-@keyframes cursor {
-  0%, 40% {
-    opacity: 1;
-  }
-
-  60%, 100% {
-    opacity: 0;
-  }
-
-  .w-70 {
-    width: 20rem;
-	}
-}
-</style>
 <section class="text-gray-600 body-font ">
     <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">

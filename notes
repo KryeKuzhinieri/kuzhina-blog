@@ -10,16 +10,15 @@ TODO:
   - Add no results found if nothing found in search. (DONE)
   - Give html page title (DONE)
   - Fix language dropdown (DONE)
+  - Move css to a separate file. (DONE)
+  - Add logo (DONE)
+  - Add favicon (DONE)
+  - Add social media pages to footer (DONE)
 
 
-  - Move all the tags into base.html
-  - Move css to a separate file.
-  - Add favicon
-  - Add social media pages to footer
   - Editor Code not showing syntax highlight.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - Rreth nesh,
-  - Add logo,
   - Dark mode,
 
 
