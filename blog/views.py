@@ -35,14 +35,16 @@ def category_post_list(request, slug):
 
 
 def all_posts(request):
-    posts = Post.objects.order_by('-timestamp')
+    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
+    posts = Post.objects.filter(categories__in=categories).order_by('-timestamp')
     context = {
         "all_posts": posts,
     }
     return render(request, "all_posts.html", context)
 
 def search(request):
-    queryset = Post.objects.all()
+    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
+    queryset = Post.objects.filter(categories__in=categories)
     query = request.GET.get('q')
     if query:
         queryset = queryset.filter(

@@ -1,7 +1,6 @@
 from django import template
 from django.template.defaultfilters import stringfilter
 import markdown as md
-from blog.models import Category
 
 
 register = template.Library()
@@ -11,6 +10,3 @@ register = template.Library()
 def markdown(value):
     return md.markdown(value, extensions=['markdown.extensions.fenced_code'])
 
-@register.simple_tag
-def get_categories():
-    return Category.objects.all()[0:3]

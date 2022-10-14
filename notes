@@ -1,22 +1,30 @@
 TODO:
-  1. Make slug autocompleted, (DONE)
-  2. Add markdown editor, (DONE)
-    Code not showing colors.
-  3. Add languages,
-  4. Check footer information and fix it.
-  5. Check tailcss before production. It needs to be installed I guess.
-  - Add favicon,
-  - Move css to a separate file.
-  - Give html page title
-  - Filter articles language
-  - Show correct language models in admin page dashboard.
-  - Admin filter by language
-  - Search posts by language
+  - Make slug autocompleted, (DONE)
+  - Add markdown editor, (DONE)
+  - Filter articles language (DONE)
+  - Show correct language models in admin page dashboard. (DONE)
+  - Admin filter by language (DONE)
+  - Fix all posts language issue (DONE)
+  - Search posts by language (DONE)
+  - Change template photo after search - showing incorrect photo for post. (DONE)
+  - Add no results found if nothing found in search. (DONE)
+  - Give html page title (DONE)
+  - Fix language dropdown (DONE)
 
+
+  - Move all the tags into base.html
+  - Move css to a separate file.
+  - Add favicon
+  - Add social media pages to footer
+  - Editor Code not showing syntax highlight.
+  - Each view has a category filter. Find a way to add that into middleware or somewhere else.
+  - Rreth nesh,
+  - Add logo,
+  - Dark mode,
+
+
+  5. Check tailcss before production. It needs to be installed I guess.
   6. Dockerization,
-  6. Github actions automation,
   7. Django tests,
-  8. Rreth nesh,
-  6. Add logo,
-  7. Dark mode,
+  6. Github actions automation,
   8. Deploy model.
