@@ -22,12 +22,12 @@ TODO:
   - django admin light theme toggle (DONE)
   - admin favicon (DONE)
   - Check tailcss before production. It needs to be installed I guess. (DONE)
+  - add horizonal scrollbar to code cell. (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - editor add R support
   - editor add bullet point support
-  - add horizonal scrollbar to code cell.
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.

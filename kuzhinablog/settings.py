@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",
-    # "django_summernote",  # Markdown editor.
     "ckeditor",
     "ckeditor_uploader",
 ]

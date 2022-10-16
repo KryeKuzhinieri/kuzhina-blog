@@ -27,3 +27,8 @@
     width: 20rem;
 	}
 }
+
+pre {
+  overflow-x: scroll;
+  background: #F0F0F0;
+}
