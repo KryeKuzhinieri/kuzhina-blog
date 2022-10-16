@@ -21,6 +21,7 @@ TODO:
   - Fix progress bug js (DONE)
   - django admin light theme toggle (DONE)
   - admin favicon (DONE)
+  - Check tailcss before production. It needs to be installed I guess. (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
@@ -34,7 +35,6 @@ TODO:
   - Add author description
   - toggle menu when collapsed
   - Connect to database
-  - Check tailcss before production. It needs to be installed I guess.
   - Make dropdown disappear after click
 
 

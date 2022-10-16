@@ -1,5 +1,4 @@
 function documentScroller() {
-	console.log('test----')	
 	var h = document.documentElement;
 	var b = document.body;
 	var st = 'scrollTop';
