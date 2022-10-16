@@ -17,13 +17,17 @@ TODO:
 
 
   - Editor Code not showing syntax highlight.
+  - Editor not allowing for mardown
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
+  - Ne pah shows HTML tags
   - Rreth nesh,
   - Dark mode,
   - toggle menu when collapsed
+  - Connect to database
+  - Check tailcss before production. It needs to be installed I guess.
+  - Make dropdown disappear after click
 
 
-  5. Check tailcss before production. It needs to be installed I guess.
   6. Dockerization,
   7. Django tests,
   6. Github actions automation,
