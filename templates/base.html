@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{% static 'ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css' %}" />
   <script src="{% static 'ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js' %}"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -40,7 +42,6 @@
       }
     }
   </script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link rel='stylesheet' href='{% static 'css/page.css' %}' type='text/css'>
   </head>
   <body>

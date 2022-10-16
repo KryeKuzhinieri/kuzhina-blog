@@ -17,15 +17,20 @@ TODO:
   - Editor not allowing for markdown (DONE)
   - Editor Code not showing syntax highlight. (DONE)
   - Ne pah shows HTML tags (DONE)
+  - Make text area wider in html. (DONE)
+  - Fix progress bug js (DONE)
 
 
   - django admin light theme toggle
-  - Make text area wider in html.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
+  - Fix navtoogle js bug
   - admin favicon
+  - editor add R support
+  - editor add bullet point support
   - add horizonal scrollbar to code cell.
   - Rreth nesh,
   - Dark mode,
+  - Add author description
   - toggle menu when collapsed
   - Connect to database
   - Check tailcss before production. It needs to be installed I guess.

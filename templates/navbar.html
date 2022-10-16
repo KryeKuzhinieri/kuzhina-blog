@@ -4,7 +4,8 @@
 
 {% get_categories as category_list %}
     
-    <header class="border-b-4 border-blue-500 text-gray-600 body-font">
+    <header class="fixed w-full z-10 bg-white border-b-4 border-blue-500 text-gray-600 body-font">
+    <div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <img src="{% static 'img/cook.svg'%}" width="40px" />
@@ -12,7 +13,7 @@
           {% trans "Kuzhina" %}
         </a>
       </a>
-      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+      <nav class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white md:bg-transparent z-20" id="nav-content">
         <a href="{% url 'homepage' %}" class="mr-5 hover:text-gray-900 rounded-lg hover:bg-blue-200 inline-flex items-center">
           {% trans "Head" %}
         </a>
@@ -40,7 +41,6 @@
           x-transition:leave-end="transform opacity-0 scale-95"
           class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
           <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
             {% for category in category_list %}
                 <a href="{% url 'category_post_list' category.slug %}" class="text-gray-700 block px-4 py-2 text-sm rounded-lg hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-0">
                 {{ category.title }}
@@ -54,6 +54,7 @@
       </div>
  
       </nav>
+      <nav class="w-full flex-grow lg:flex justify-end lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white md:bg-transparent z-20" id="nav-content">
       <!-- searchbar -->
       <form action ="{% url 'search' %}" class ="search-form" id="navbar-search"> 
         <div class="pt-2 relative mx-auto text-gray-600">
@@ -108,13 +109,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
+      </nav>
     </div>
-  
-
-    
     </header>
