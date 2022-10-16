@@ -27,7 +27,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",
-    "django_summernote",  # Markdown editor.
+    # "django_summernote",  # Markdown editor.
+    "ckeditor",
+    "ckeditor_uploader",
 ]
 
 MIDDLEWARE = [
@@ -126,12 +128,20 @@ MEDIA_ROOT = BASE_DIR / "media_cdn"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# Configuration for text editor
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
-# Configuration for markdown editor.
-SUMMERNOTE_CONFIG = {
-    'codemirror': {
-        'mode': 'htmlmixed',
-        'lineNumbers': 'true',
-    },
+CKEDITOR_CONFIGS = {
+    'default': {
+        "skins": "moono",
+        'toolbar': 'full',
+        'height': 700,
+        'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        'tabSpaces': 4,
+        'extraPlugins': ','.join([
+            "youtube",
+            "markdown",
+            'codesnippet',
+        ]),
+    }
 }
-SUMMERNOTE_THEME = 'bs3'

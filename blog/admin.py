@@ -1,10 +1,8 @@
 from django.contrib import admin
 from .models import Author, Category, Post
-from django_summernote.admin import SummernoteModelAdmin
 
 
-class CategoryAdmin(SummernoteModelAdmin):
-    summernote_fields = "__all__"  # Shows markdown editor
+class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}  # Autopopulates slug
 
     def get_queryset(self, request):
@@ -12,8 +10,7 @@ class CategoryAdmin(SummernoteModelAdmin):
         return qs.filter(language=request.LANGUAGE_CODE)
 
 
-class PostAdmin(SummernoteModelAdmin):
-    summernote_fields = "__all__"
+class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
     def get_queryset(self, request):

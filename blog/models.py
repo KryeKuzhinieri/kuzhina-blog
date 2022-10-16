@@ -3,6 +3,7 @@ from django.db import models
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from kuzhinablog.settings import LANGUAGES
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 User = get_user_model()
@@ -36,7 +37,21 @@ class Post(models.Model):
     slug = models.SlugField(_('slug'), unique=True, max_length=100)
     overview = models.TextField(_('overview'))
     timestamp = models.DateTimeField(_('timestamp'), auto_now_add=True)
-    content = models.TextField(_('content'))
+    content = RichTextUploadingField(
+        _('content'),
+        external_plugin_resources=[
+            (
+                "youtube",
+                "/static/editor_plugins/ckeditor-youtube-plugin/youtube/",
+                "plugin.js"
+            ),
+            (
+                "markdown",
+                "/static/editor_plugins/CKEditor-Markdown-Plugin/markdown/",
+                "plugin.js"
+            ),
+        ],
+    )
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     thumbnail = models.ImageField(_('thumbnail'))
     categories = models.ManyToManyField(Category)

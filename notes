@@ -14,12 +14,16 @@ TODO:
   - Add logo (DONE)
   - Add favicon (DONE)
   - Add social media pages to footer (DONE)
+  - Editor not allowing for markdown (DONE)
+  - Editor Code not showing syntax highlight. (DONE)
+  - Ne pah shows HTML tags (DONE)
 
 
-  - Editor Code not showing syntax highlight.
-  - Editor not allowing for mardown
+  - django admin light theme toggle
+  - Make text area wider in html.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
-  - Ne pah shows HTML tags
+  - admin favicon
+  - add horizonal scrollbar to code cell.
   - Rreth nesh,
   - Dark mode,
   - toggle menu when collapsed
