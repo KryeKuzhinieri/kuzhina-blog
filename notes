@@ -25,6 +25,8 @@ TODO:
   - add horizonal scrollbar to code cell. (DONE)
   - editor add bullet point support (DONE)
   - editor add R support (DONE)
+  - toggle menu when collapsed (DONE)
+  - Make dropdown disappear after click (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
@@ -32,11 +34,11 @@ TODO:
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
+  - search form not working after changing navbar.
   - Dark mode,
   - Add author description
-  - toggle menu when collapsed
   - Connect to database
-  - Make dropdown disappear after click
+  - Dropdown text not working well.
 
 
   6. Dockerization,
