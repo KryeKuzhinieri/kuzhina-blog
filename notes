@@ -23,11 +23,12 @@ TODO:
   - admin favicon (DONE)
   - Check tailcss before production. It needs to be installed I guess. (DONE)
   - add horizonal scrollbar to code cell. (DONE)
+  - editor add bullet point support (DONE)
+  - editor add R support (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
-  - editor add R support
-  - editor add bullet point support
+  - fix header text alignment. 
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
