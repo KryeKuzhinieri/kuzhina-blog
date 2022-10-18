@@ -2,13 +2,13 @@
 {% load i18n %}
 {% block content %}
 
-<section class="text-gray-600 body-font ">
+<section class="text-gray-600 body-font dark:bg-gray-800">
     <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 underline underline-offset-4"> 
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 underline underline-offset-4 dark:text-white"> 
         {% trans "Categories" %}
       </h1>
-      <p class="lg:w-1/2 w-full leading-relaxed text-base">
+      <p class="lg:w-1/2 w-full leading-relaxed text-base dark:text-white">
         {% trans "Types of Articles" %}
       </p>
     </div>
@@ -38,13 +38,13 @@
       </div>
     </div>
 </section>
-<section class="blog text-gray-700 body-font">
+<section class="blog text-gray-700 body-font dark:bg-gray-800">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 underline underline-offset-4"> 
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 underline underline-offset-4 dark:text-white"> 
         {% trans "Featured" %}
       </h1>
-      <p class="lg:w-1/2 w-full leading-relaxed text-base">
+      <p class="lg:w-1/2 w-full leading-relaxed text-base dark:text-white">
         {% trans "Showcased Articles" %}
       </p>
     </div>
@@ -55,23 +55,23 @@
         style="background-image: url('{{ obj.thumbnail.url }}')">
       </div>
 
-        <div class=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+        <div class=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5 dark:bg-gray-700">
           
           <div class="header-content inline-flex ">
             <div class="category-badge flex-1  h-4 w-4 m rounded-full m-1 bg-purple-100">
-              <div class="h-2 w-2 rounded-full m-1 bg-blue-500 " ></div>
+              <div class="h-2 w-2 rounded-full m-1 bg-blue-500" ></div>
             </div>
             {% for category in obj.categories.all %}
-            <div class="category-title flex-1 text-sm"> 
+            <div class="category-title flex-1 text-sm dark:text-white"> 
               {{ category.title }}
             </div>
             {% endfor %}
           </div>
-            <div class="title-post font-medium">
+            <div class="title-post font-medium dark:text-white">
             {{ obj.title }}
             </div>
 
-            <div class="summary-post text-base text-justify">
+            <div class="summary-post text-base text-justify dark:text-white">
               {{ obj.overview }}
             </div>
             

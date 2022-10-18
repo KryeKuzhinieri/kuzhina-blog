@@ -32,18 +32,29 @@ TODO:
   - navbar blue line, (DONE)
   - navbar progress, (DONE)
   - fix header text alignment. (DONE)
+  - Dark mode white line above, (DONE)
+  - Dark mode, (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
-  - Dark mode,
+  - Rubrika should have only 3 categories, add rounded images with colors only.
+  - Add language in toggle after collapse,
+  - Add theme mode in toggle after collapse,
+  - add space between lang and theme
   - Add author description
   - Connect to database
   - Dropdown text not working well.
+  - fix timestamp format
+  - very slow (maybe issue with progress?)
+  - issue when nothing found (white background)
+  - code css in dark mode,
+  - text white in dark mode. Check different options for categories/subcategories.
 
 
+  5. Keep only the js and css from flowbite and delete the rest of the stuff.
   6. Dockerization,
   7. Django tests,
   6. Github actions automation,

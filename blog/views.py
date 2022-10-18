@@ -4,7 +4,7 @@ from django.db.models import Q
 
 
 def homepage(request):
-    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
+    categories = Category.objects.filter(language=request.LANGUAGE_CODE)[0:3]
     featured = Post.objects.filter(featured=True, categories__in=categories)
     context = {
         'object_list': featured,
@@ -30,6 +30,7 @@ def category_post_list(request, slug):
     posts = Post.objects.filter(categories__in=[category])
     context = {
         'posts': posts,
+        "category": category
     }
     return render(request, 'category_post_list.html', context)
 
