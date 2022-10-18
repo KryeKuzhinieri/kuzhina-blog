@@ -9,7 +9,8 @@
 {% get_available_languages as AVAILABLE_LANGUAGES %}
 {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
 
-
+<header class="fixed w-full z-10 bg-white border-b-4 border-blue-500 text-gray-600 body-font">
+<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
     <a href="{% url 'homepage' %}" class="flex items-center">
@@ -30,7 +31,7 @@
       <input name="q" placeholder='{% trans "Search" %}' type="text" id="search-navbar" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
     </div>
     </form>
-      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+      <button id="lang" type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
         {% with "img/"|add:CURRENT_LANGUAGE|add:".svg" as image_static %}
           <img src="{% static image_static %}" class="h-3.5 w-3.5 rounded-full mr-2" />
         {% endwith %}
@@ -104,3 +105,4 @@
   </div>
   </div>
 </nav>
+</header>

@@ -28,6 +28,10 @@ TODO:
   - toggle menu when collapsed (DONE)
   - Make dropdown disappear after click (DONE)
   - search form not working after changing navbar. (DONE)
+  - navbar fixed, (DONE)
+  - navbar blue line, (DONE)
+  - navbar progress, (DONE)
+  - fix header text alignment. (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
@@ -35,10 +39,6 @@ TODO:
   - move all js config to js file
   - check admin cookbook for more admin changes.
   - Dark mode,
-  - navbar fixed,
-  - fix header text alignment. 
-  - navbar blue line,
-  - navbar progress,
   - Add author description
   - Connect to database
   - Dropdown text not working well.
