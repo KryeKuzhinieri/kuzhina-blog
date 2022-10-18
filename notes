@@ -27,15 +27,18 @@ TODO:
   - editor add R support (DONE)
   - toggle menu when collapsed (DONE)
   - Make dropdown disappear after click (DONE)
+  - search form not working after changing navbar. (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
-  - fix header text alignment. 
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
-  - search form not working after changing navbar.
   - Dark mode,
+  - navbar fixed,
+  - fix header text alignment. 
+  - navbar blue line,
+  - navbar progress,
   - Add author description
   - Connect to database
   - Dropdown text not working well.
