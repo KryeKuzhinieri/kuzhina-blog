@@ -36,6 +36,7 @@ TODO:
   - Dark mode, (DONE)
   - Dropdown text not working well. (DONE)
   - fix timestamp format (DONE)
+  - add space between lang and theme (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
@@ -43,10 +44,8 @@ TODO:
   - move all js config to js file
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
-  - Add language in toggle after collapse,
-  - Add theme mode in toggle after collapse,
-  - add space between lang and theme
   - Add author description
+  - search issue going into second row after collapse.
   - Connect to database
   - upgrade django version to latest.
   - very slow (maybe issue with progress?)
