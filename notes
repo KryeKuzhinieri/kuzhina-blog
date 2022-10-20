@@ -34,6 +34,7 @@ TODO:
   - fix header text alignment. (DONE)
   - Dark mode white line above, (DONE)
   - Dark mode, (DONE)
+  - Dropdown text not working well. (DONE)
 
 
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
@@ -45,13 +46,15 @@ TODO:
   - Add theme mode in toggle after collapse,
   - add space between lang and theme
   - Add author description
-  - Connect to database (TEST)
-  - Dropdown text not working well.
+  - Connect to database
+  - upgrade django version to latest.
   - fix timestamp format
   - very slow (maybe issue with progress?)
   - issue when nothing found (white background)
   - code css in dark mode,
+  - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
   - text white in dark mode. Check different options for categories/subcategories.
+  - check firefox warning about scroll
 
 
   5. Keep only the js and css from flowbite and delete the rest of the stuff.
