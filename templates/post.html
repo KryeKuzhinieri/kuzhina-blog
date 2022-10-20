@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block content %}
+{% get_current_language as CURRENT_LANGUAGE %}
 <body class="bg-gray-100 font-sans leading-normal tracking-normal dark:bg-gray-800"> 
 	<div class="container w-full md:max-w-4xl mx-auto pt-20">
 		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
@@ -8,7 +10,12 @@
 						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl dark:text-white">
 						{{ post.title }}</h1>
 						<p class="text-sm md:text-base font-normal text-gray-600 dark:text-white">
-						{{ post.timestamp}}</p>
+							{% if CURRENT_LANGUAGE == "sq" %}
+								{{ post.timestamp|date|lower }}
+							{% else %}
+								{{ post.timestamp }}
+							{% endif %}
+						</p>
 						<img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ post.thumbnail.url }}" alt="content">
 			</div>
 			<!--Post Content-->

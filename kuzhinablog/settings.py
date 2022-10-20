@@ -1,5 +1,7 @@
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
+from django.conf.locale.sq import formats as sq_formats
+from django.conf.locale.en import formats as en_formats
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -100,6 +102,12 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# sq datetime format
+sq_formats.DATETIME_FORMAT = "d E Y"
+
+# en datetime format
+en_formats.DATETIME_FORMAT = "E jS, Y"
 
 LANGUAGES = (
     ('en', _('English')),
