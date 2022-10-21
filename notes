@@ -38,16 +38,16 @@ TODO:
   - fix timestamp format (DONE)
   - add space between lang and theme (DONE)
   - Add author description (DONE)
+  - upgrade django version to latest. (DONE)
+  - search issue going into second row after collapse. (DONE)
 
 
-  - search issue going into second row after collapse.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - formula color in dark mode.
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
-  - upgrade django version to latest.
   - very slow (maybe issue with progress?)
   - issue when nothing found (white background)
   - text white in dark mode. Check different options for categories/subcategories.
