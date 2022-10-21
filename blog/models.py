@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
+from django.utils.translation import get_language
 from kuzhinablog.settings import LANGUAGES
 from ckeditor_uploader.fields import RichTextUploadingField
 
@@ -34,12 +35,23 @@ class Author(models.Model):
         verbose_name_plural = "Authors"
 
 
+class CategoryManager(models.Manager):
+    def get_queryset(self):
+        return super(CategoryManager, self).get_queryset().filter(language=get_language())
+
+    @property
+    def category_by_language(self):
+        return super(CategoryManager, self).get_queryset().filter(categories__in=Category.objects.all())
+
+
 class Category(models.Model):
     title = models.CharField(_('title'), max_length=20)
-    subtitle = models.CharField(_('subtitle'), max_length=20)
+    subtitle = models.CharField(_('subtitle'), max_length=255)
     slug = models.SlugField(_('slug'), unique=True)
     thumbnail = models.ImageField(_('thumbnail'))
-    language = models.CharField(_('Language'), choices=LANGUAGES, max_length=20, default=LANGUAGES[1])
+    language = models.CharField(_('Language'), choices=LANGUAGES, max_length=20, default=LANGUAGES[0])
+
+    objects = CategoryManager()
 
     def __str__(self):
         return self.title
@@ -75,8 +87,11 @@ class Post(models.Model):
     )
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     thumbnail = models.ImageField(_('thumbnail'))
-    categories = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category, related_name="posts")
     featured = models.BooleanField(_('featured'))
+
+    objects = models.Manager()
+    custom_manager = CategoryManager()
 
     def __str__(self):
         return self.title
@@ -88,4 +103,3 @@ class Post(models.Model):
     class Meta:
         verbose_name = "Post"
         verbose_name_plural = "Posts"
-

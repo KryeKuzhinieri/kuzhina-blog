@@ -4,7 +4,7 @@ from django.db.models import Q
 
 
 def homepage(request):
-    categories = Category.objects.filter(language=request.LANGUAGE_CODE)[0:3]
+    categories = Category.objects.all()[0:3]
     featured = Post.objects.filter(featured=True, categories__in=categories)
     context = {
         'object_list': featured,
@@ -28,7 +28,7 @@ def about(request):
 
 
 def category_post_list(request, slug):
-    category = Category.objects.get(slug=slug, language=request.LANGUAGE_CODE)
+    category = Category.objects.get(slug=slug)
     posts = Post.objects.filter(categories__in=[category])
     context = {
         'posts': posts,
@@ -38,16 +38,14 @@ def category_post_list(request, slug):
 
 
 def all_posts(request):
-    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
-    posts = Post.objects.filter(categories__in=categories).order_by('-timestamp')
+    posts = Post.custom_manager.category_by_language
     context = {
         "all_posts": posts,
     }
     return render(request, "all_posts.html", context)
 
 def search(request):
-    categories = Category.objects.filter(language=request.LANGUAGE_CODE)
-    queryset = Post.objects.filter(categories__in=categories)
+    queryset = Post.custom_manager.category_by_language
     query = request.GET.get('q')
     if query:
         queryset = queryset.filter(

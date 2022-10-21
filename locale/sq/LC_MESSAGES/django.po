@@ -40,7 +40,7 @@ msgstr "Miniatura"
 
 #: blog/models.py:42
 msgid "Language"
-msgstr "Language"
+msgstr "Gjuha"
 
 #: blog/models.py:59
 msgid "overview"

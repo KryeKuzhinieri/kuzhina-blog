@@ -5,18 +5,13 @@ from .models import Author, Category, Post
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}  # Autopopulates slug
 
-    def get_queryset(self, request):
-        qs = super().get_queryset(request)
-        return qs.filter(language=request.LANGUAGE_CODE)
-
 
 class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
     def get_queryset(self, request):
-        categories = Category.objects.filter(language=request.LANGUAGE_CODE)
-        qs = super().get_queryset(request)
-        return qs.filter(categories__in=categories)
+        qs = self.model.custom_manager.category_by_language
+        return qs
 
 
 admin.site.register(Post, PostAdmin)

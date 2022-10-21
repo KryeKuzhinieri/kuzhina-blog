@@ -40,11 +40,13 @@ TODO:
   - Add author description (DONE)
   - upgrade django version to latest. (DONE)
   - search issue going into second row after collapse. (DONE)
+  - Each view has a category filter. Find a way to add that into middleware or somewhere else. (DONE)
 
 
-  - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - formula color in dark mode.
+  - code css in dark mode,
   - Rreth nesh,
+  - prepopulate user when creating a post.
   - move all js config to js file
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
@@ -52,7 +54,6 @@ TODO:
   - issue when nothing found (white background)
   - text white in dark mode. Check different options for categories/subcategories.
   - check firefox warning about scroll
-  - code css in dark mode,
   - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
   - Connect to database
 
@@ -67,3 +68,4 @@ TODO:
   Commands:
     django-admin makemessages --all --ignore=venv
     django-admin compilemessages --ignore=venv
+    python manage.py createsuperuser
