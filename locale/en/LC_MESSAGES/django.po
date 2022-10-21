@@ -40,7 +40,7 @@ msgstr "Thumbnail"
 
 #: blog/models.py:24 templates/navbar.html:65
 msgid "Language"
-msgstr "Gjuha"
+msgstr "Language"
 
 #: blog/models.py:37
 msgid "overview"

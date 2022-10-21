@@ -39,21 +39,21 @@ TODO:
   - add space between lang and theme (DONE)
 
 
+  - Add author description
+  - search issue going into second row after collapse.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
-  - Add author description
-  - search issue going into second row after collapse.
-  - Connect to database
   - upgrade django version to latest.
   - very slow (maybe issue with progress?)
   - issue when nothing found (white background)
-  - code css in dark mode,
-  - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
   - text white in dark mode. Check different options for categories/subcategories.
   - check firefox warning about scroll
+  - code css in dark mode,
+  - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
+  - Connect to database
 
 
   5. Keep only the js and css from flowbite and delete the rest of the stuff.
@@ -61,3 +61,8 @@ TODO:
   7. Django tests,
   6. Github actions automation,
   8. Deploy model.
+
+
+  Commands:
+    django-admin makemessages --all --ignore=venv
+    django-admin compilemessages --ignore=venv

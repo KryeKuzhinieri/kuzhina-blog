@@ -16,6 +16,10 @@ class Author(models.Model):
     def __str__(self):
         return self.user.username
 
+    class Meta:
+        verbose_name = "Author"
+        verbose_name_plural = "Authors"
+
 
 class Category(models.Model):
     title = models.CharField(_('title'), max_length=20)
@@ -30,6 +34,10 @@ class Category(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(Category, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
 
 
 class Post(models.Model):
@@ -63,4 +71,8 @@ class Post(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super(Post, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = "Post"
+        verbose_name_plural = "Posts"
 
