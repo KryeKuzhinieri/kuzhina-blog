@@ -1,6 +1,12 @@
+.dark pre {
+  overflow-x: scroll;
+  background: #3F3F3F;
+}
+
+
 pre {
   overflow-x: scroll;
-  background: #F0F0F0;
+  background: #f4f4f4;
 }
 
 nav li {

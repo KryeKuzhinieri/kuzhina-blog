@@ -1,29 +1,37 @@
-#navbar-search {
-  margin-right: 10px;
-  margin-top: -6px;
+pre {
+  overflow-x: scroll;
+  background: #F0F0F0;
 }
 
-.cursor::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 100%;
-    background-color: #fff;
-    animation: cursor .6s linear infinite alternate;
-    will-change: opacity;
+nav li {
+  list-style: none;
 }
 
-@keyframes cursor {
-  0%, 40% {
-    opacity: 1;
-  }
+.some-space {
+  padding-bottom: 40px;
+}
 
-  60%, 100% {
-    opacity: 0;
-  }
+.md\:max-w-4xl{max-width:56rem!important;}
 
-  .w-70 {
-    width: 20rem;
-	}
+#main-navbar {
+  margin-top: 15px;
+}
+
+#lang {
+  margin-left: 15px;
+}
+
+#main-footer {
+  margin-top: 24px;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+}
+
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55/var(--tw-bg-opacity));
+}
+
+.ml-10 {
+  margin-left: 10px;
 }

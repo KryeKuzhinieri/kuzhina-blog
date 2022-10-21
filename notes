@@ -42,10 +42,10 @@ TODO:
   - search issue going into second row after collapse. (DONE)
   - Each view has a category filter. Find a way to add that into middleware or somewhere else. (DONE)
   - move all js config to js file (DONE)
+  - code css in dark mode, (DONE)
 
 
   - formula color in dark mode.
-  - code css in dark mode,
   - Rreth nesh,
   - prepopulate user when creating a post.
   - check admin cookbook for more admin changes.
