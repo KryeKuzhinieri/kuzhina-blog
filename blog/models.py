@@ -21,8 +21,10 @@ class Author(models.Model):
         if sender.__name__ == "Author":
             for lan in LANGUAGES:
                 model_name = f"description_{lan[0]}"
-                field = models.CharField(_(model_name), max_length=255, blank=True, default="")
-                field.contribute_to_class(sender, model_name)
+                fields = [f.name for f in sender._meta.fields]
+                if model_name not in fields:
+                    field = models.CharField(_(model_name), max_length=255, blank=True, default="")
+                    field.contribute_to_class(sender, model_name)
 
     # It adds the dynamic fields after the class has been prepared.
     models.signals.class_prepared.connect(add_fields)
