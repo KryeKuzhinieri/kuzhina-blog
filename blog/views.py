@@ -15,8 +15,10 @@ def homepage(request):
 
 def post(request, slug):
     post = Post.objects.get(slug=slug)
+    author_description = getattr(post.author, f'description_{request.LANGUAGE_CODE}', False)
     context = {
         'post': post,
+        'author_description': author_description,
     }
     return render(request, 'post.html', context)
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 12:06+0300\n"
+"POT-Creation-Date: 2022-10-21 09:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,51 +18,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/models.py:13
+#: blog/models.py:14
 msgid "profile_picture"
 msgstr "Fotografia e Profilit"
 
-#: blog/models.py:20 blog/models.py:35
+#: blog/models.py:38 blog/models.py:57
 msgid "title"
 msgstr "Titulli"
 
-#: blog/models.py:21
+#: blog/models.py:39
 msgid "subtitle"
 msgstr "Nëntitulli"
 
-#: blog/models.py:22 blog/models.py:36
+#: blog/models.py:40 blog/models.py:58
 msgid "slug"
 msgstr "Fisha"
 
-#: blog/models.py:23 blog/models.py:41
+#: blog/models.py:41 blog/models.py:77
 msgid "thumbnail"
 msgstr "Miniatura"
 
-#: blog/models.py:24 templates/navbar.html:65
+#: blog/models.py:42
 msgid "Language"
 msgstr "Language"
 
-#: blog/models.py:37
+#: blog/models.py:59
 msgid "overview"
 msgstr "Pasqyra"
 
-#: blog/models.py:38
+#: blog/models.py:60
 msgid "timestamp"
 msgstr "Data"
 
-#: blog/models.py:39
+#: blog/models.py:62
 msgid "content"
 msgstr "Përmbajtja"
 
-#: blog/models.py:43
+#: blog/models.py:79
 msgid "featured"
 msgstr "Në pah"
 
-#: kuzhinablog/settings.py:103
+#: kuzhinablog/settings.py:113
 msgid "English"
 msgstr "Anglisht"
 
-#: kuzhinablog/settings.py:104
+#: kuzhinablog/settings.py:114
 msgid "Shqip"
 msgstr "Shqip"
 
@@ -70,53 +70,54 @@ msgstr "Shqip"
 msgid "All Posts"
 msgstr "Të gjitha postimet"
 
-#: templates/footer.html:8 templates/footer.html:10 templates/navbar.html:17
+#: templates/base.html:6 templates/footer.html:7 templates/footer.html:9
+#: templates/navbar.html:18
 msgid "Kuzhina"
 msgstr "Kuzhina"
 
-#: templates/homepage.html:36 templates/navbar.html:31
+#: templates/homepage.html:9 templates/navbar.html:90
 msgid "Categories"
 msgstr "Rubrikat"
 
-#: templates/homepage.html:39
+#: templates/homepage.html:12
 msgid "Types of Articles"
 msgstr "Llojet e referateve"
 
-#: templates/homepage.html:48
+#: templates/homepage.html:21
 msgid "Category"
 msgstr "Rubrikat"
 
-#: templates/homepage.html:55
+#: templates/homepage.html:28
 msgid "Articles"
 msgstr "Referatet"
 
-#: templates/homepage.html:72
+#: templates/homepage.html:45
 msgid "Featured"
 msgstr "Në pah"
 
-#: templates/homepage.html:75
+#: templates/homepage.html:48
 msgid "Showcased Articles"
 msgstr "Punimet e përzgjedhura"
 
-#: templates/homepage.html:107 templates/search_results.html:41
+#: templates/homepage.html:80 templates/search_results.html:41
 msgid "Read more"
 msgstr "Më tej"
 
-#: templates/navbar.html:22
+#: templates/navbar.html:23 templates/navbar.html:31 templates/navbar.html:74
+msgid "Search"
+msgstr "Kërko"
+
+#: templates/navbar.html:80
 msgid "Head"
 msgstr "Kreu"
 
-#: templates/navbar.html:25
+#: templates/navbar.html:85
 msgid "About Us"
 msgstr "Rreth Nesh"
 
-#: templates/navbar.html:55
+#: templates/navbar.html:104
 msgid "All posts"
 msgstr "Të gjitha postimet"
-
-#: templates/navbar.html:84
-msgid "Search"
-msgstr "Kërko"
 
 #: templates/search_results.html:9
 msgid "Search Results"

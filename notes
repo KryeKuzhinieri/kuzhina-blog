@@ -37,11 +37,12 @@ TODO:
   - Dropdown text not working well. (DONE)
   - fix timestamp format (DONE)
   - add space between lang and theme (DONE)
+  - Add author description (DONE)
 
 
-  - Add author description
   - search issue going into second row after collapse.
   - Each view has a category filter. Find a way to add that into middleware or somewhere else.
+  - formula color in dark mode.
   - Rreth nesh,
   - move all js config to js file
   - check admin cookbook for more admin changes.

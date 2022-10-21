@@ -26,12 +26,13 @@
 		<!--Divider-->
 		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
 		<!--Author-->
-		<div class="flex w-full items-center font-sans px-4 py-12">
+		<div class="flex w-full items-center font-sans px-4 py-12 dark:text-white">
 			<img class="w-10 h-10 rounded-full mr-4" src="{{ post.author.profile_picture.url }}">
 			<div class="flex-1 px-2">
 				<p class="text-base font-bold text-base md:text-xl leading-none mb-2 dark:text-white">
 				{{ post.author }}</p>
 			</div>
+			{{ author_description }}
 		</div>
 		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
 	</div>

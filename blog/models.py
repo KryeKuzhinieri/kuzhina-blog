@@ -16,6 +16,17 @@ class Author(models.Model):
     def __str__(self):
         return self.user.username
 
+    # Adds dynamic model fields for each language (i.e: description_en, description_sq, )
+    def add_fields(sender, **kwargs):
+        if sender.__name__ == "Author":
+            for lan in LANGUAGES:
+                model_name = f"description_{lan[0]}"
+                field = models.CharField(_(model_name), max_length=255, blank=True, default="")
+                field.contribute_to_class(sender, model_name)
+
+    # It adds the dynamic fields after the class has been prepared.
+    models.signals.class_prepared.connect(add_fields)
+
     class Meta:
         verbose_name = "Author"
         verbose_name_plural = "Authors"
