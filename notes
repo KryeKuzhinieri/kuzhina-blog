@@ -41,13 +41,13 @@ TODO:
   - upgrade django version to latest. (DONE)
   - search issue going into second row after collapse. (DONE)
   - Each view has a category filter. Find a way to add that into middleware or somewhere else. (DONE)
+  - move all js config to js file (DONE)
 
 
   - formula color in dark mode.
   - code css in dark mode,
   - Rreth nesh,
   - prepopulate user when creating a post.
-  - move all js config to js file
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
   - very slow (maybe issue with progress?)
