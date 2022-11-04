@@ -43,11 +43,11 @@ TODO:
   - Each view has a category filter. Find a way to add that into middleware or somewhere else. (DONE)
   - move all js config to js file (DONE)
   - code css in dark mode, (DONE)
+  - prepopulate user when creating a post. (DONE)
 
 
   - formula color in dark mode.
   - Rreth nesh,
-  - prepopulate user when creating a post.
   - check admin cookbook for more admin changes.
   - Rubrika should have only 3 categories, add rounded images with colors only.
   - very slow (maybe issue with progress?)
@@ -55,11 +55,11 @@ TODO:
   - text white in dark mode. Check different options for categories/subcategories.
   - check firefox warning about scroll
   - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
-  - Connect to database
 
 
-  5. Keep only the js and css from flowbite and delete the rest of the stuff.
   6. Dockerization,
+  - Connect to database
+  5. Keep only the js and css from flowbite and delete the rest of the stuff.
   7. Django tests,
   6. Github actions automation,
   8. Deploy model.
