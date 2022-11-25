@@ -146,6 +146,7 @@ CKEDITOR_CONFIGS = {
         'height': 700,
         'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
         'tabSpaces': 4,
+        'allowedContent': True,
         'extraPlugins': ','.join([
             "youtube",
             "markdown",

@@ -44,9 +44,10 @@ TODO:
   - move all js config to js file (DONE)
   - code css in dark mode, (DONE)
   - prepopulate user when creating a post. (DONE)
+  - banner image should be larger. (done)
+  - formula color in dark mode. (DONE)
 
 
-  - formula color in dark mode.
   - table not appearing.
   - Rreth nesh,
   - check admin cookbook for more admin changes.
