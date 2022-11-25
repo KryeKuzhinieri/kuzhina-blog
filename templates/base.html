@@ -18,11 +18,13 @@
   </script>
   <link rel='stylesheet' href='{% static 'css/page.css' %}' type='text/css'>
   </head>
-  <body>
+  <body class="flex flex-col h-screen">
     {% include "navbar.html" %}
     <div class="some-space"></div>
-    {% block content %}
-    {% endblock content %}
+    <div class="flex-grow">
+      {% block content %}
+      {% endblock content %}
+    </div>
     <script src="{% static 'css/tailwind/node_modules/flowbite/dist/flowbite.js' %}"></script>
     {% include "footer.html" %}
   </body>

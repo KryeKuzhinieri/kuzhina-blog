@@ -47,15 +47,12 @@ TODO:
   - banner image should be larger. (done)
   - formula color in dark mode. (DONE)
   - Rubrika should have only 3 categories, add rounded images with colors only. (DONE)
+  - issue when nothing found (white background) (DONE)
 
 
   - table not appearing.
   - Rreth nesh,
   - check admin cookbook for more admin changes.
-  - very slow (maybe issue with progress?)
-  - issue when nothing found (white background)
-  - text white in dark mode. Check different options for categories/subcategories.
-  - check firefox warning about scroll
   - remove all duplicates from tailwind and flowbite and keep only what is needed for the page. Remove all the other node files.
 
 
