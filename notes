@@ -46,12 +46,12 @@ TODO:
   - prepopulate user when creating a post. (DONE)
   - banner image should be larger. (done)
   - formula color in dark mode. (DONE)
+  - Rubrika should have only 3 categories, add rounded images with colors only. (DONE)
 
 
   - table not appearing.
   - Rreth nesh,
   - check admin cookbook for more admin changes.
-  - Rubrika should have only 3 categories, add rounded images with colors only.
   - very slow (maybe issue with progress?)
   - issue when nothing found (white background)
   - text white in dark mode. Check different options for categories/subcategories.
